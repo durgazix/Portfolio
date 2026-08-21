@@ -52,3 +52,66 @@ export const findMe = {
 }
 
 export const resume = { type: 'resume', title: 'My resume', file: '/resume.pdf' }
+
+export const posts = [
+  {
+    slug: 'ai-operations-lab',
+    title: 'Designing a practical AI operations lab',
+    coverImage: '/projects/northstar.svg',
+    excerpt: 'A simple blueprint for stitching LLM pipelines, observability, and team workflows into a real operating system for AI projects.',
+    date: '2026-08-18',
+    tags: ['AI', 'Workflow', 'Leadership'],
+    content: `
+      <h2>Building an AI ops loop that does not break under real work</h2>
+      <p>Most AI projects fail not because the model is weak, but because the operating model around it is noisy. I’ve found that a good implementation needs clarity around prompts, data boundaries, and feedback loops.</p>
+      <p>My approach is to treat the model as a tool inside a structured system: a clear prompt contract, measurable output checks, and a simple human review path when confidence drops.</p>
+      <h3>What matters in practice</h3>
+      <ul>
+        <li>Define success as a product outcome, not a model benchmark.</li>
+        <li>Track prompt variation and retrieval quality with the same seriousness as application metrics.</li>
+        <li>Keep a review loop for edge cases and noisy user requests.</li>
+      </ul>
+      <pre><code>if confidence &lt; threshold:
+  route_to_human_review()
+else:
+  return_response_with_trace()</code></pre>
+      <p>That combination makes AI feel more like infrastructure than magic.</p>
+    `,
+  },
+  {
+    slug: 'full-stack-ai-product',
+    title: 'Shipping a full-stack AI product from idea to prototype',
+    coverImage: '/projects/mori-studio.svg',
+    excerpt: 'A behind-the-scenes look at the architecture, UX choices, and tradeoffs that matter when building AI features for people.',
+    date: '2026-08-07',
+    tags: ['Product', 'React', 'AI'],
+    content: `
+      <h2>From concept to user-facing prototype</h2>
+      <p>When building AI products, the main challenge is usually not model quality; it is creating an experience that users trust and understand.</p>
+      <p>I focus on three levers: concise UI, explicit guardrails, and transparent system behavior. The interface should explain what is happening without overwhelming the user.</p>
+      <h3>Architecture pattern</h3>
+      <ol>
+        <li>Collect structured inputs from the frontend.</li>
+        <li>Route requests through a backend validation layer.</li>
+        <li>Perform retrieval or tool execution and return a bounded response.</li>
+      </ol>
+      <p>Once the workflow is stable, the next step is tuning for clarity and confidence. The product becomes easier to trust when the user sees the right signals.</p>
+    `,
+  },
+  {
+    slug: 'learning-by-building',
+    title: 'Why learning by building has been the fastest path',
+    coverImage: '/projects/field-notes.svg',
+    excerpt: 'I keep returning to this principle: real constraints create better engineering instincts than theory alone.',
+    date: '2026-07-21',
+    tags: ['Learning', 'Engineering'],
+    content: `
+      <h2>The best engineering lessons come from real constraints</h2>
+      <p>My favorite projects are the ones that force decisions about scale, reliability, and user trust early. These constraints teach faster than any course or tutorial.</p>
+      <p>When I build an app, I try to answer: what breaks when users actually use this? What happens under poor data? What if the model hallucinates? What if the UI is confusing?</p>
+      <p>That mindset turns each project into a system-level learning exercise.</p>
+    `,
+  },
+]
+
+export const updates = []
