@@ -6,7 +6,7 @@ export default function Sidebar({ onQuery, onResume, onUpdates, isOpen, onToggle
     <div className="profile-photo"><img src="/projects/image.png" alt="Durga Prasad Sahoo" onError={(event) => { event.currentTarget.style.display = 'none' }} /><span>DPS</span></div>
     <h2>Durga Prasad Sahoo</h2><p className="role">Full-Stack AI Engineer</p>
     <div className="education"><strong>GIET University</strong><span>B.Tech CSE · 8.4/10 · Jul 2026</span></div>
-    <p className="tagline">AI/ML, Generative AI &<br />full-stack development.</p>
+    <p className="tagline">AI/ML, Generative AI &<br />Full Stack Development.</p>
 
     <button className="resume-button" type="button" onClick={onResume}><FileText size={15} /> Resume</button>
     <button className="updates-link" type="button" onClick={onUpdates}>
