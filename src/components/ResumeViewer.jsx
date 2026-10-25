@@ -1,7 +1,8 @@
 import { Download, ExternalLink, FileText } from 'lucide-react'
 import { useState } from 'react'
+import { publicAsset } from '../publicAsset'
 
-export default function ResumeViewer({ mode = 'inline', file = '/resume.pdf' }) {
+export default function ResumeViewer({ mode = 'inline', file = publicAsset('/resume.pdf') }) {
   const [loaded, setLoaded] = useState(false)
   return <div className={`resume-viewer ${mode}`}>
     <div className="resume-actions"><span><FileText size={16} /> PDF resume</span><div><a href={file} download><Download size={14} /> Download</a><a href={file} target="_blank" rel="noreferrer"><ExternalLink size={14} /> Open in new tab</a></div></div>

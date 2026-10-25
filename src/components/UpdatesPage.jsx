@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { updates } from '../data/portfolioData'
+import { publicAsset } from '../publicAsset'
 
 export default function UpdatesPage() {
   const [loading, setLoading] = useState(true)
@@ -51,7 +52,7 @@ export default function UpdatesPage() {
       {!hasUpdates ? (
         <div className="empty-update-state">
           <div className="empty-update-visual">
-            <img src="/projects/update.png" alt="No updates yet" />
+            <img src={publicAsset('/projects/update.png')} alt="No updates yet" />
           </div>
           <div className="empty-update-copy">
             <span className="page-kicker">No updates yet</span>
@@ -63,7 +64,7 @@ export default function UpdatesPage() {
           {updates.map((entry) => (
             <article className="update-item" key={`${entry.date}-${entry.title}`}>
               <div className="update-visual">
-                <img src={entry.image || '/projects/update.png'} alt={entry.title} />
+                <img src={entry.image || publicAsset('/projects/update.png')} alt={entry.title} />
               </div>
               <div className="update-date">{new Date(entry.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}</div>
               <div className="update-content">

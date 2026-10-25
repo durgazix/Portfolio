@@ -1,3 +1,5 @@
+import { publicAsset } from '../publicAsset'
+
 export const home = {
   type: 'home',
   title: 'Hello, I’m Durga Prasad Sahoo.',
@@ -20,11 +22,11 @@ export const about = {
 }
 
 export const projects = [
-  { title: 'DevOps Graph Wexa AI', description: 'An AI-powered DevOps knowledge platform that connects engineering data, services, and workflows in a searchable graph to help teams understand systems, investigate issues, and make faster operational decisions.', tech: ['Python', 'AI', 'Knowledge Graph', 'DevOps', 'Streamlit'], images: ['/projects/field-notes.svg'], live: 'https://devopsgraphwexaai.vercel.app/', github: 'https://github.com/durgazix/devopsgraphwexaai' },
-  { title: 'Auto Insurance Fraud Claim Detection', description: 'Built an end-to-end Random Forest pipeline for imbalanced claim data, reaching 88.42% accuracy and 0.96 ROC AUC. Deployed a Streamlit risk-scoring app and analytics dashboard.', tech: ['Python', 'Scikit-learn', 'Random Forest', 'Pandas', 'NumPy', 'Streamlit'], images: ['/projects/field-notes.svg'], live: '#', github: 'https://github.com/durgazix/Auto_Insurance_Fraud_Claim' },
-  { title: 'Customer Refund Management using Agentic AI', description: 'Built a full-stack support platform using RAG and LLM agents for refund eligibility and customer conversations, with voice workflows and real-time agent monitoring.', tech: ['React.js', 'MongoDB', 'RAG', 'OpenAI', 'LangChain', 'LangGraph'], images: ['/projects/northstar.svg'], live: '#', github: 'https://github.com/durgazix/Customer-Support-Agent' },
-  { title: 'Nova Stay — AI Reservation System', description: 'Created a Flask hotel operations assistant with context-aware chat, booking confirmation, GST-compliant invoices, and stay-duration calculations across 50+ scenarios.', tech: ['Python', 'Flask', 'RAG', 'GenAI', 'ChromaDB', 'Hugging Face'], images: ['/projects/mori-studio.svg'], live: '#', github: 'https://github.com/durgazix/Nova_Stay' },
-  { title: 'Uber Application', description: 'Built a real-time rider and driver platform with JWT authentication, Socket.IO communication, and Dijkstra-based optimal route calculation.', tech: ['React.js', 'Tailwind CSS', 'Express.js', 'Node.js',('Python'), ('Flask'), ('RAG'), ('GenAI'), ('ChromaDB'), ('Hugging Face')], images: ['/projects/northstar.svg'], live: '#', github: 'https://github.com/durgazix/Uber-App' },
+  { title: 'DevOps Graph Wexa AI', description: 'An AI-powered DevOps knowledge platform that connects engineering data, services, and workflows in a searchable graph to help teams understand systems, investigate issues, and make faster operational decisions.', tech: ['Python', 'AI', 'Knowledge Graph', 'DevOps', 'Streamlit'], images: [publicAsset('/projects/field-notes.svg')], live: 'https://devopsgraphwexaai.vercel.app/', github: 'https://github.com/durgazix/devopsgraphwexaai' },
+  { title: 'Auto Insurance Fraud Claim Detection', description: 'Built an end-to-end Random Forest pipeline for imbalanced claim data, reaching 88.42% accuracy and 0.96 ROC AUC. Deployed a Streamlit risk-scoring app and analytics dashboard.', tech: ['Python', 'Scikit-learn', 'Random Forest', 'Pandas', 'NumPy', 'Streamlit'], images: [publicAsset('/projects/field-notes.svg')], live: '#', github: 'https://github.com/durgazix/Auto_Insurance_Fraud_Claim' },
+  { title: 'Customer Refund Management using Agentic AI', description: 'Built a full-stack support platform using RAG and LLM agents for refund eligibility and customer conversations, with voice workflows and real-time agent monitoring.', tech: ['React.js', 'MongoDB', 'RAG', 'OpenAI', 'LangChain', 'LangGraph'], images: [publicAsset('/projects/northstar.svg')], live: '#', github: 'https://github.com/durgazix/Customer-Support-Agent' },
+  { title: 'Nova Stay — AI Reservation System', description: 'Created a Flask hotel operations assistant with context-aware chat, booking confirmation, GST-compliant invoices, and stay-duration calculations across 50+ scenarios.', tech: ['Python', 'Flask', 'RAG', 'GenAI', 'ChromaDB', 'Hugging Face'], images: [publicAsset('/projects/mori-studio.svg')], live: '#', github: 'https://github.com/durgazix/Nova_Stay' },
+  { title: 'Uber Application', description: 'Built a real-time rider and driver platform with JWT authentication, Socket.IO communication, and Dijkstra-based optimal route calculation.', tech: ['React.js', 'Tailwind CSS', 'Express.js', 'Node.js',('Python'), ('Flask'), ('RAG'), ('GenAI'), ('ChromaDB'), ('Hugging Face')], images: [publicAsset('/projects/northstar.svg')], live: '#', github: 'https://github.com/durgazix/Uber-App' },
 ]
 
 export const experience = [
@@ -51,13 +53,13 @@ export const findMe = {
   ],
 }
 
-export const resume = { type: 'resume', title: 'My resume', file: '/resume.pdf' }
+export const resume = { type: 'resume', title: 'My resume', file: publicAsset('/resume.pdf') }
 
 export const posts = [
   {
     slug: 'ai-operations-lab',
     title: 'Designing a practical AI operations lab',
-    coverImage: '/projects/northstar.svg',
+    coverImage: publicAsset('/projects/northstar.svg'),
     excerpt: 'A simple blueprint for stitching LLM pipelines, observability, and team workflows into a real operating system for AI projects.',
     date: '2026-08-18',
     tags: ['AI', 'Workflow', 'Leadership'],
@@ -81,7 +83,7 @@ else:
   {
     slug: 'full-stack-ai-product',
     title: 'Shipping a full-stack AI product from idea to prototype',
-    coverImage: '/projects/mori-studio.svg',
+    coverImage: publicAsset('/projects/mori-studio.svg'),
     excerpt: 'A behind-the-scenes look at the architecture, UX choices, and tradeoffs that matter when building AI features for people.',
     date: '2026-08-07',
     tags: ['Product', 'React', 'AI'],
@@ -101,7 +103,7 @@ else:
   {
     slug: 'learning-by-building',
     title: 'Why learning by building has been the fastest path',
-    coverImage: '/projects/field-notes.svg',
+    coverImage: publicAsset('/projects/field-notes.svg'),
     excerpt: 'I keep returning to this principle: real constraints create better engineering instincts than theory alone.',
     date: '2026-07-21',
     tags: ['Learning', 'Engineering'],
