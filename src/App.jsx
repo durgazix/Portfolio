@@ -117,7 +117,7 @@ function PortfolioShell() {
 
 function App() {
   return (
-    <BrowserRouter basename="/Porfolio">
+    <BrowserRouter basename="/Portfolio">
       <PortfolioShell />
     </BrowserRouter>
   )
